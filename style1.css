@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+
+*{  margin: 0;
+    padding: 0;
+    font-family: IBM Plex Sans;
+   
+  }
+
+  body{
+    height:50vh; 
+    width: 100%;
+    display: grid; 
+    grid-gap:1;
+    justify-content: center; 
+    align-items: center; 
+    background-image: url(https://images.unsplash.com/photo-1543164904-8ff92670a192?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHN0b3B3YXRjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    
+    }
+
+    
+
+    h2{
+    font-size: 2.8em;
+    margin-top: 80px;
+    color:#fff;
+    text-transform: uppercase;
+    background-color: #000;
+        
+    }
+    
+    .stopwatch{
+        width:100%;
+        height: 60px;
+        font-size: 3.5em;
+        font-weight: bold;
+        padding: 16px;
+        border-radius: 6px;
+        background:linear-gradient(350deg,#ffc0cb 0%, #ec38bc 10%, #7303c0 30%, #40e0d0 50%, yellow 60%,#a17fe0 90%, #667db6 100%);
+        
+        box-shadow: 2px 2px 2px rgba(151, 219, 219, 0.897), 2px 2px 2px rgb(154, 222, 224), 3px 3px 3px rgba(255, 255, 255,0.8),
+             3px 3px 3px rgba(25, 54, 92,0.6),
+             3px 3px 5px rgba(25, 54, 92,0.7),
+             5px 5px 5px rgba(25, 54, 92,0.4);
+             
+    }   
+    
+    button{
+             background-color: darkmagenta;
+             color: #fff;
+             border-radius:12px;
+             border: none;
+             padding: 10px;
+             box-shadow: 2px 2px 2px #fff, 2px 2px 2px #fff, 3px 3px 3px #fff,
+             4px 4px 4px #4379be,
+             5px 5px 5px #4379be,
+             6px 6px 6px #4379be;
+             
+             
+            }  
+
+    button:hover{
+        color: rgb(25, 54, 92);
+        background-color: #44db09;
+        box-shadow: 2px 2px 2px #fff, 2px 2px 2px rgb(236, 43, 43), 3px 3px 3px rgb(148, 15, 236),
+             4px 4px 4px #be43b4,
+             5px 5px 5px #44db09,
+             6px 6px 6px #4379be;
+             
+    }
+
+    @media only screen and (min-width:190px)  
+    {
+        body{
+             background-color: #fff;
+        }
+    } 
