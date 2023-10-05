@@ -1,0 +1,165 @@
+
+* {
+   
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-color:darkcyan;
+    
+}
+
+.card {
+    width: 80%; /* Adjusted width for smaller screens */
+    max-width: 360px; /* Maximum width for iPhone 12 Pro */
+    background:linear-gradient(45deg,rgb(255, 192, 203) , rgb(115, 3, 192) ,rgb(161, 127, 224) , hwb(223 40% 29%));
+    color: #fff;
+    margin: 40px auto 0;
+    border-radius: 20px;
+    padding: 30px 25px; /* Adjusted padding */
+    text-align: center;
+    
+}
+
+.card:hover{
+    color:rgb(71, 8, 8);
+    background: linear-gradient(45deg,skyblue,yellow);
+    box-shadow: 5px 5px 5px black,5px 5px 5px rgb(13, 133, 107),5px 5px 5px yellow;
+    transform: translateX(-10px);
+    
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 8px 18px; /* Adjusted padding */
+    height: 48px; /* Adjusted height */
+    border-radius: 24px; /* Adjusted border radius */
+    flex: 1;
+    margin-right: 16px;
+    font-size: 16px; /* Adjusted font size */
+    
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 48px; /* Adjusted width */
+    height: 48px; /* Adjusted height */
+    cursor: pointer;
+}
+
+.search button img {
+    width: 24px; /* Adjusted image size */
+}
+
+.weather-icon {
+    width: 90px; /* Adjusted icon size */
+    height:45px;
+    margin-top: 20px; /* Adjusted margin */
+}
+
+.weather h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 30px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px; /* Adjusted padding */
+    margin-top: 40px; /* Adjusted margin */
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 20px;
+}
+
+.weather {
+    display: none;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* Media query for iPhone 12 Pro */
+@media screen and (max-width: 428px) {
+    .card {
+        width: 90%; /* Adjusted width for smaller screens */
+        max-width: none;
+        padding: 20px 15px; /* Adjusted padding */
+    }
+
+    .search input {
+        padding: 8px 12px; /* Adjusted padding */
+        font-size: 14px; /* Adjusted font size */
+    }
+
+    .search button {
+        width: 40px; /* Adjusted width */
+        height: 40px; /* Adjusted height */
+    }
+
+    .search button img {
+        width: 20px; /* Adjusted image size */
+    }
+
+    .weather h1 {
+        font-size: 50px; /* Adjusted font size */
+    }
+
+    .weather h2 {
+        font-size: 24px; /* Adjusted font size */
+    }
+
+    .details {
+        margin-top: 30px; /* Adjusted margin */
+    }
+
+    .col img {
+        width: 24px; /* Adjusted image size */
+    }
+
+    .humidity,
+    .wind {
+        font-size: 16px; /* Adjusted font size */
+    }
+}
+
